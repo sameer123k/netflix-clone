@@ -102,7 +102,10 @@
   font-size: 25px;
   border-radius: 3px;
 }
-
+.heroSection .heroContent>div button a{
+  text-decoration:none;
+  color:#fff;
+}
 .heroSection .heroImg img {
   height: 300px;
   width: auto;
@@ -274,6 +277,10 @@ z-index: 9;
    width:100%;
    text-decoration:none;
    padding:7px 0;
+}
+.loginForm Form button.signIn a{
+  text-decoration:none;
+  color:#fff;
 }
 .loginForm Form small{
   color:#fff;

@@ -15,6 +15,9 @@ import { IoLanguage } from "react-icons/io5";
 // link import 
 import {Link} from 'react-router-dom';
 
+function submitFunction(){
+ console.log("click event run Successfully");
+}
 
 
 export default function Home() {
@@ -58,7 +61,7 @@ export default function Home() {
                 <h6>Ready to watch? Enter your email to create or restart your membership.</h6>
                 <div>
                   <input type="text" placeholder='Email Address' />
-                  <button>Get Started </button>
+                  <button onClick={submitFunction}><Link to="/register">Get Started </Link> </button>
                 </div>
               </div>
             </Col>
