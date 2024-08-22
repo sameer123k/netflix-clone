@@ -25,7 +25,8 @@
   border-radius: 3px;
   color: white;
 }
-.Header .Navbar select option{
+
+.Header .Navbar select option {
   background-color: #fff;
   color: #000;
 }
@@ -102,10 +103,12 @@
   font-size: 25px;
   border-radius: 3px;
 }
-.heroSection .heroContent>div button a{
-  text-decoration:none;
-  color:#fff;
+
+.heroSection .heroContent>div button a {
+  text-decoration: none;
+  color: #fff;
 }
+
 .heroSection .heroImg img {
   height: 300px;
   width: auto;
@@ -136,8 +139,8 @@
 .footer {
   background-color: #000;
   color: #fff;
-  padding: 50px  0;
-  border-top:6px solid #3c3c3c;
+  padding: 50px 0;
+  border-top: 6px solid #3c3c3c;
 }
 
 .footer h3 {
@@ -171,29 +174,34 @@
   margin: 0;
 }
 
-.enjoyTv{
+.enjoyTv {
   padding: 40px 0;
   background-color: #000;
 }
-.enjoyTv .content h4{
+
+.enjoyTv .content h4 {
   font-size: 40px;
   font-weight: 700;
   color: #fff;
 }
-.enjoyTv .content p{
+
+.enjoyTv .content p {
   font-size: 23px;
   color: #fff;
 }
-.enjoyTv .tvFrame{
+
+.enjoyTv .tvFrame {
   position: relative;
   z-index: 2;
 }
-.enjoyTv .tvFrame img{
-height: 100%;
-width: 100%;
-z-index: 9;
+
+.enjoyTv .tvFrame img {
+  height: 100%;
+  width: 100%;
+  z-index: 9;
 }
-.enjoyTv .tvFrame iframe{
+
+.enjoyTv .tvFrame iframe {
   position: absolute;
   right: 9%;
   top: 20%;
@@ -201,31 +209,33 @@ z-index: 9;
   width: 450px;
   height: 228px;
 }
-.enjoyTv{
+
+.enjoyTv {
   border-bottom: 6px solid #3c3c3c;
 }
-.Accordion{
+
+.Accordion {
   padding: 40px 0;
   background-color: #000;
 }
 
 
- .heroContent h6 {
+.heroContent h6 {
   color: #fff;
   font-weight: 400;
   font-size: 23px;
   text-align: center;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
- .heroContent>div {
+.heroContent>div {
   padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
- .heroContent>div input {
+.heroContent>div input {
   height: 50px;
   max-width: 330px;
   width: 100%;
@@ -237,7 +247,7 @@ z-index: 9;
   font-size: 18px;
 }
 
- .heroContent>div button {
+.heroContent>div button {
   height: 50px;
   padding: 0 20px;
   border: none;
@@ -248,11 +258,12 @@ z-index: 9;
   border-radius: 3px;
 }
 
- .heroImg img {
+.heroImg img {
   height: 300px;
   width: auto;
 }
-.loginForm{
+
+.loginForm {
   background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -261,54 +272,126 @@ z-index: 9;
   background-color: #7c7c7c;
   padding: 150px 0 0;
 }
-.loginForm Form{
+
+.loginForm Form {
   max-width: 400px;
-    margin: 0 auto;
-    background: rgb(0 0 0 / 64%);   
-    padding:30px;
+  margin: 0 auto;
+  background: rgb(0 0 0 / 64%);
+  padding: 30px;
 }
-.loginForm Form h2{
-  color:#fff;
+
+.loginForm Form h2 {
+  color: #fff;
   margin: 0 0 25px;
 }
-.loginForm Form button.signIn{
-   background-color:red;
-   color:#fff;
-   width:100%;
-   text-decoration:none;
-   padding:7px 0;
+
+.loginForm Form button.signIn {
+  background-color: red;
+  color: #fff;
+  width: 100%;
+  text-decoration: none;
+  padding: 7px 0;
 }
-.loginForm Form button.signIn a{
-  text-decoration:none;
-  color:#fff;
+
+.loginForm Form button.signIn a {
+  text-decoration: none;
+  color: #fff;
 }
-.loginForm Form small{
-  color:#fff;
+
+.loginForm Form small {
+  color: #fff;
   display: grid;
   place-items: center;
 }
-.loginForm Form button{
-  background:rgb(191 191 191 / 42%);
-  width:100%;
-   color:#fff;
-   text-decoration:none;
-   padding:7px 0;
+
+.loginForm Form button {
+  background: rgb(191 191 191 / 42%);
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 0;
 }
-.loginForm Form .form-check label{
+
+.loginForm Form .form-check label {
   color: #fff;
 }
-.loginForm Form .mb-3 p strong{
+
+.loginForm Form .mb-3 p strong {
   color: #fff
 }
 
-.loginForm Form .mb-3 p{
+.loginForm Form .mb-3 p {
   color: #c9c8c8
 }
-.footerCopy{
-  text-align:center;
+
+.footerCopy {
+  text-align: center;
   padding: 30px 0 0;
   color: #c9c8c8
 }
-.footerCopy a{
-  color:red;
+
+.footerCopy a {
+  color: red;
+}
+
+/* tab responsive  */
+
+@media only screen and (max-width:992px) {
+  .heroSection{
+    padding: 150px 0;
+    height: calc(100vh - 400px);
+  }
+  .enjoyTv .tvFrame iframe{
+    position: absolute;
+    right: 14%;
+    top: 13%;
+    z-index: -1;
+    width: 530px;
+    height: 350px;
+  }
+}
+
+/* mobile responsive  */
+
+@media only screen and (max-width:500px) {
+  .heroSection .heroContent>div input {
+    max-width: 220px;
+  }
+
+  .heroSection .heroContent>div button {
+    font-size: 15px;
+  }
+
+  .heroSection {
+    padding: 150px 0;
+  }
+
+  .enjoyTv .content p {
+    font-size: 17px;
+  }
+
+  .enjoyTv .content h4 {
+    font-size: 35px;
+  }
+
+  .enjoyTv .tvFrame iframe {
+    position: absolute;
+    right: 15%;
+    top: 5%;
+    z-index: -1;
+    width: 250px;
+    height: 234px;
+  }
+
+  .heroSection .heroContent h6 {
+    font-size: 18px;
+  }
+
+  .heroContent>div button {
+    font-size: 15px;
+  }
+
+  .heroContent>div input {
+    max-width: 220px;
+  }
 }

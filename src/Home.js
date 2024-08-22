@@ -28,12 +28,12 @@ export default function Home() {
       <div className='Header'>
         <Container>
           <Row className="align-items-center">
-            <Col>
+            <Col xs={4}>
               <div>
                 <img src={logo} alt="logo" className="logo" />
               </div>
             </Col>
-            <Col>
+            <Col xs={8}>
               <div className='Navbar'>
 
                 <select>
@@ -73,13 +73,13 @@ export default function Home() {
       <div className='enjoyTv'>
         <Container>
           <Row className='align-items-center justify-content-center'>
-            <Col>
+            <Col sm={12}>
               <div className='content'>
                 <h4>Enjoy on your TV </h4>
                 <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more. </p>
               </div>
             </Col>
-            <Col>
+            <Col sm={12}>
               <div>
                 <div className='tvFrame'>
                   <img src={frame} alt="frame" />
@@ -96,7 +96,7 @@ export default function Home() {
         <Container>
           <Row className='align-items-center justify-content-center'>
 
-            <Col>
+            <Col sm={12}>
               <div>
                 <div className='tvFrame'>
                   <img src={frame} alt="frame" />
@@ -105,7 +105,7 @@ export default function Home() {
                 </div>
               </div>
             </Col>
-            <Col>
+            <Col sm={12}>
               <div className='content'>
                 <h4>Enjoy on your TV </h4>
                 <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more. </p>
