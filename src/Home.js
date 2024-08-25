@@ -9,6 +9,8 @@ import frame from "./images/frame.png";
 import Accordion from 'react-bootstrap/Accordion';
 import Footer from "./Components/footer";
 
+import ThemeProvider from 'react-bootstrap/ThemeProvider'
+
 import { IconName } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
 
@@ -73,13 +75,13 @@ export default function Home() {
       <div className='enjoyTv'>
         <Container>
           <Row className='align-items-center justify-content-center'>
-            <Col sm={12}>
+            <Col  xs={12} sm={12} md={6} lg={6} xl={6}>
               <div className='content'>
                 <h4>Enjoy on your TV </h4>
                 <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more. </p>
               </div>
             </Col>
-            <Col sm={12}>
+            <Col xs={12} sm={12} md={6} lg={6} xl={6}>
               <div>
                 <div className='tvFrame'>
                   <img src={frame} alt="frame" />
@@ -96,7 +98,7 @@ export default function Home() {
         <Container>
           <Row className='align-items-center justify-content-center'>
 
-            <Col sm={12}>
+            <Col xs={12} sm={12} md={6} lg={6} xl={6}>
               <div>
                 <div className='tvFrame'>
                   <img src={frame} alt="frame" />
@@ -105,7 +107,7 @@ export default function Home() {
                 </div>
               </div>
             </Col>
-            <Col sm={12}>
+            <Col xs={12} sm={12} md={6} lg={6} xl={6}>
               <div className='content'>
                 <h4>Enjoy on your TV </h4>
                 <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more. </p>

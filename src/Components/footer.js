@@ -4,12 +4,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 
+
 export default function footer() {
   return (
     <div className='footer'>
       <Container>
         <Row>
-          <Col sm={6} >
+          <Col xs={12} sm={6} md={3} lg={3} xl={3} >
 
             <ul>
               <li><a href="#">Faq</a></li>
@@ -18,14 +19,14 @@ export default function footer() {
               <li><a href="#">Speed Test</a></li>
             </ul>
           </Col>
-          <Col sm={6} >
+          <Col xs={12} sm={6} md={3} lg={3} xl={3} >
             <ul>
               <li><a href="#">Help Centre</a></li>
               <li><a href="#">Jobs</a></li>
               <li><a href="#">Cookie Preferences</a></li>
               <li><a href="#">Legal Notices</a></li>
             </ul></Col>
-          <Col sm={6} >
+          <Col xs={12} sm={6} md={3} lg={3} xl={3} >
 
             <ul>
               <li><a href="#">Account</a></li>
@@ -33,7 +34,7 @@ export default function footer() {
               <li><a href="#">Corporate Information</a></li>
               <li><a href="#">Only on Netflix</a></li>
             </ul></Col>
-          <Col sm={6} >
+          <Col xs={12} sm={6} md={3} lg={3} xl={3} >
 
             <ul>
               <li><a href="#">Media Centre</a></li>
