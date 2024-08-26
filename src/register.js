@@ -7,29 +7,18 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import logo from './images/logo1.png';
+import Header from './Components/header2';
+import {Box} from '@mui/material';
 
 export default function register() {
-    return (
-        <div>
-             <div className='Header'>
-        <Container>
-          <Row className="align-items-center">
-            <Col>
-              <div>
-                <Link to="/">
-                <img src={logo} alt="logo" className="logo" />
-                </Link>
-              </div>
-            </Col>
-            <Col>
-
-            </Col>
-          </Row>
-        </Container>
-      </div>
+  return (
+    <Box>
+      <Box className='Header'>
+        <Header />
+      </Box>
 
 
-      <div className="loginForm">
+      <Box className="loginForm">
         <Form>
           <h2> Sign up </h2>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -55,17 +44,17 @@ export default function register() {
           <Form.Group className="mb-3" controlId="">
             <button className="signIn"><Link to="/Dashboard"> Sign Up </Link> </button>
           </Form.Group>
-         
+
 
           <Form.Group className="mb-3" controlId="">
             <p> Already have an account? <strong> <Link to="/login">Login</Link> </strong>   </p>
           </Form.Group>
 
         </Form>
-      </div>
+      </Box>
 
-    </div>
+    </Box>
 
-       
-    )
+
+  )
 }

@@ -7,30 +7,19 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import logo from './images/logo1.png';
+import { Box } from '@mui/material';
+import Header from './Components/header2';
 
 export default function login() {
   return (
-    <div>
+    <Box>
 
-      <div className='Header'>
-        <Container>
-          <Row className="align-items-center">
-            <Col>
-              <div>
-                <Link to="/">
-                <img src={logo} alt="logo" className="logo" />
-                </Link>
-              </div>
-            </Col>
-            <Col>
-
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <Box className='Header'>
+        <Header />
+      </Box>
 
 
-      <div className="loginForm">
+      <Box className="loginForm">
         <Form>
           <h2> Sign in </h2>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -44,11 +33,11 @@ export default function login() {
 
           <Form.Group className="mb-3" controlId="">
             <button className="signIn"><Link to="/Dashboard"> Sign In  </Link></button>
-          </Form.Group>        
+          </Form.Group>
 
           <Form.Group className="mb-3" controlId="">
             <small>Forgot Password?</small>
-          </Form.Group>        
+          </Form.Group>
 
 
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
@@ -60,9 +49,9 @@ export default function login() {
           </Form.Group>
 
         </Form>
-      </div>
+      </Box>
 
-    </div>
+    </Box>
 
 
   )

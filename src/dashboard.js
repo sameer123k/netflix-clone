@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import {Box} from '@mui/material';
 
 export default function dashboard() {
     return (
-        <div>
+        <Box>
             <h2> Dashboard </h2>
-        </div>
+        </Box>
     )
 }
