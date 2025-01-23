@@ -8,7 +8,7 @@ import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo1.png';
 import Header from '../Components/header2';
-import {Box} from '@mui/material';
+import { Box } from '@mui/material';
 
 export default function register() {
   return (
