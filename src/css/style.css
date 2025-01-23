@@ -47,7 +47,7 @@
 }
 
 .heroSection {
-  background-image: url(../images/hero.jpg);
+  background-image: url(../assets//images/hero.jpg);
   height: 100vh;
   background-blend-mode: multiply;
   background-color: #7c7c7c;
@@ -264,7 +264,7 @@
 }
 
 .loginForm {
-  background-image: url(../images/hero.jpg);
+  background-image: url(../assets/images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;

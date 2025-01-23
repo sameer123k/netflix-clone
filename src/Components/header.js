@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import logo from '../images/logo1.png';
+import logo from '../assets/images/logo1.png';
 import { Link } from 'react-router-dom';
 import { Box } from '@mui/material';
 

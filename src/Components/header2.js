@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 import { Box } from '@mui/material';
-import logo from '../images/logo1.png';
+import logo from '../assets/images/logo1.png';
 
 export default function header2() {
     return (

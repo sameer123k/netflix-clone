@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import frame from "../images/frame.png";
+import frame from "../assets/images/frame.png";
 import {Box} from '@mui/material';
 
 export default function enjoy() {
