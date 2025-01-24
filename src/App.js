@@ -7,6 +7,7 @@ import Register from "./pages/register";
 import Dashboard from "./pages/dashboard";
 import Notfound from './pages/notfound';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Dashboardheader from './Components/dashboardheader';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="Login" element={<Login />} />
         <Route path="Register" element={<Register />} />
         <Route path="Dashboard" element={<Dashboard />} />
+        <Route path="Dashboardheader" element={<Dashboardheader />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
     </BrowserRouter>

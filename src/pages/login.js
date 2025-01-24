@@ -32,7 +32,7 @@ export default function login() {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="">
-            <button className="signIn"><Link to="/Dashboard"> Sign In  </Link></button>
+            <button className="signIn"><Link to="../Dashboard"> Sign In  </Link></button>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="">
