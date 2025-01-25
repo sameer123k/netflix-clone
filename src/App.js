@@ -8,6 +8,7 @@ import Dashboard from "./pages/dashboard";
 import Notfound from './pages/notfound';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dashboardheader from './Components/dashboardheader';
+import Profile from './pages/profile-setting';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
         <Route path="Dashboard" element={<Dashboard />} />
         <Route path="Dashboardheader" element={<Dashboardheader />} />
         <Route path="*" element={<Notfound />} />
+        <Route path="Profile" element={<Profile />} />
+
       </Routes>
     </BrowserRouter>
   );
