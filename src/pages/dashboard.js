@@ -1,5 +1,4 @@
 import React from 'react';
-import { Box } from '@mui/material';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -17,16 +16,16 @@ import Footer from '../Components/footer';
 export default function dashboard() {
     return (
         // header 
-        <Box>
+        <Container fluid className='p-0'>
 
-            <div>  <Header /></div>
+            <Header />
 
             <div className="hero-Section">
                 <Container>
                     <Row>
                         <Col xl={12}>
                             <h4> Award Winning Movies </h4>
-                            <Box className="slider">
+                            <div className="slider">
                                 <img src={SliderImg} alt="hero" height={150} />
                                 <img src={Movie} alt="hero" height={150} />
                                 <img src={Movie2} alt="hero" height={150} />
@@ -35,9 +34,9 @@ export default function dashboard() {
                                 <img src={Movie5} alt="hero" height={150} />
                                 <img src={Movie2} alt="hero" height={150} />
                                 <img src={Movie} alt="hero" height={150} />
-                            </Box>
+                            </div>
                             <h4> Comedies </h4>
-                            <Box className="slider">
+                            <div className="slider">
                                 <img src={Movie5} alt="hero" height={150} />
                                 <img src={Movie2} alt="hero" height={150} />
                                 <img src={Movie} alt="hero" height={150} />
@@ -47,9 +46,9 @@ export default function dashboard() {
                                 <img src={Movie} alt="hero" height={150} />
                                 <img src={Movie2} alt="hero" height={150} />
 
-                            </Box>
+                            </div>
                             <h4> Best Horror Movie  </h4>
-                            <Box className="slider">
+                            <div className="slider">
                                 <img src={Movie2} alt="hero" height={150} />
                                 <img src={Movie3} alt="hero" height={150} />
                                 <img src={Movie2} alt="hero" height={150} />
@@ -59,16 +58,16 @@ export default function dashboard() {
                                 <img src={Movie4} alt="hero" height={150} />
                                 <img src={Movie} alt="hero" height={150} />
 
-                            </Box>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
             </div>
 
-            <div>
-                <Footer />
-            </div>
-        </Box>
+
+            <Footer />
+
+        </Container>
 
     )
 }

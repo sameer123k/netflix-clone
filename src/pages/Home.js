@@ -12,7 +12,7 @@ import Enjoy from '../Components/enjoy';
 import Accordion from '../Components/accordion';
 import { IconName } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
-import { Box } from '@mui/material';
+
 
 // link import 
 import { Link } from 'react-router-dom';
@@ -20,34 +20,34 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
-    <Box>
+    <Container fluid className="p-0">
 
 
-      <Box className='Header'>
+      <div className='Header'>
         <Header />
-      </Box>
+      </div>
 
 
-      <Box className='heroSection'>
+      <div className='heroSection'>
         <Hero />
-      </Box>
+      </div>
 
 
-      <Box className='enjoyTv'>
+      <div className='enjoyTv'>
         <Enjoy />
-      </Box>
+      </div>
 
 
-      <Box className="Accordion">
+      <div className="Accordion">
         <Accordion />
-      </Box>
+      </div>
 
 
-      <Box className="Footer">
+      <div className="Footer">
         <Footer />
-      </Box>
+      </div>
 
 
-    </Box >
+    </Container >
   );
 }

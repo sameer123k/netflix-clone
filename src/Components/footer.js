@@ -3,11 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
-
-import {Box} from '@mui/material';
 export default function footer() {
   return (
-    <Box className='footer'>
+
+    <div className='footer'>
       <Container>
         <Row>
           <Col xs={12} sm={6} md={3} lg={3} xl={3} >
@@ -47,6 +46,6 @@ export default function footer() {
           <p className="footerCopy"> Designed by <Link to="https://infracode.in/">InfraCode</Link> </p>
         </Row>
       </Container>
-    </Box>
+    </div>
   )
 }

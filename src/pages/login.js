@@ -7,19 +7,18 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo1.png';
-import { Box } from '@mui/material';
 import Header from '../Components/header2';
 
 export default function login() {
   return (
-    <Box>
+    <>
 
-      <Box className='Header'>
+      <Container className='Header'>
         <Header />
-      </Box>
+      </Container>
 
 
-      <Box className="loginForm">
+      <Container fluid className="loginForm">
         <Form>
           <h2> Sign in </h2>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -49,9 +48,9 @@ export default function login() {
           </Form.Group>
 
         </Form>
-      </Box>
+      </Container>
 
-    </Box>
+    </>
 
 
   )

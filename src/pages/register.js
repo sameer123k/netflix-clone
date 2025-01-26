@@ -8,17 +8,16 @@ import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo1.png';
 import Header from '../Components/header2';
-import { Box } from '@mui/material';
 
 export default function register() {
   return (
-    <Box>
-      <Box className='Header'>
+    <>
+      <Container className='Header'>
         <Header />
-      </Box>
+      </Container>
 
 
-      <Box className="loginForm">
+      <Container fluid className="loginForm">
         <Form>
           <h2> Sign up </h2>
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -51,9 +50,9 @@ export default function register() {
           </Form.Group>
 
         </Form>
-      </Box>
+      </Container>
 
-    </Box>
+    </>
 
 
   )

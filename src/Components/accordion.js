@@ -4,11 +4,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import {Box} from '@mui/material';
 
 export default function accordion() {
     return (
-        <Box>
+        <div>
             <Container>
                 <Row>
                     <Col>
@@ -47,16 +46,16 @@ export default function accordion() {
             <Container>
                 <Row>
                     <Col lg={12}>
-                        <Box className='heroContent'>
+                        <div className='heroContent'>
                             <h6>Ready to watch? Enter your email to create or restart your membership.</h6>
-                            <Box>
+                            <div>
                                 <input type="text" placeholder='Email Address' />
                                 <button>Get Started </button>
-                            </Box>
-                        </Box>
+                            </div>
+                        </div>
                     </Col>
                 </Row>
             </Container>
-        </Box>
+        </div>
     )
 }
