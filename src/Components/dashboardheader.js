@@ -12,12 +12,12 @@ export default function dashboardheader() {
   return (
     <div className="bg-black">
       <Container className='py-3'>
-        <Row>
+        <Row className='align-items-center'>
           <Col xl="6" xs={12}>
             <div className="topLeft">
-              <Link to="/"> <img src={Logo} alt="logo" height={30} /></Link>
+              <Link to="/Dashboard"> <img src={Logo} alt="logo" height={30} /></Link>
               <ul>
-                <li> <Link to="/"> Home </Link>  </li>
+                <li> <Link to="/Dashboard"> Home </Link>  </li>
                 <li> <Link to="">Series</Link> </li>
                 <li> <Link to="">Movies</Link> </li>
                 <li> <Link to="">New and Popular</Link> </li>
@@ -40,12 +40,13 @@ export default function dashboardheader() {
 
                 <Dropdown.Menu>
                   <Dropdown.Item href="/Profile"><i class="bi bi-person-circle pe-1"></i> Profile Setting</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2"><i class="bi bi-download pe-1"></i> Downloads</Dropdown.Item>
+                  <Dropdown.Item href="/Downloads"><i class="bi bi-download pe-1"></i> Downloads</Dropdown.Item>
                   <Dropdown.Item href="#/action-3"><i class="bi bi-currency-rupee pe-1"></i> My Plans </Dropdown.Item>
                   <Dropdown.Item href="#/action-4"><i class="bi bi-headset pe-1"></i> Help Center </Dropdown.Item>
+                  <Dropdown.Item href="/"><i class="bi bi-box-arrow-left"></i> Logout </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-              
+
 
             </div>
           </Col>

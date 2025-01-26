@@ -409,9 +409,11 @@
 .topLeft {
   display: flex;
 }
-.topLeft ul{
+
+.topLeft ul {
   margin: 0;
 }
+
 .topLeft ul li {
   display: inline;
   padding-right: 7px;
@@ -430,10 +432,12 @@
   align-items: center;
   justify-content: end;
 }
-.topRight p{
+
+.topRight p {
   color: white;
 }
-.topRight svg{
+
+.topRight svg {
   color: white;
 }
 
@@ -450,7 +454,7 @@
 }
 
 @media (min-width: 37.5em) {
-  .lunchbox  {
+  .lunchbox {
     margin-left: auto;
     margin-right: auto;
     width: 92%;
@@ -462,7 +466,7 @@
 }
 
 @media (min-width: 43.75em) {
-  .lunchbox  {
+  .lunchbox {
     width: 95%;
   }
 }
@@ -472,180 +476,244 @@
  ========================================================================== */
 
 .swiper-container {
-  margin-top: 2em; /* minor cosmetic */
+  margin-top: 2em;
+  /* minor cosmetic */
 }
 
+.swiper-wrapper {
+  /* now pagination is below slides */
+  margin-bottom: 3em;
+
+  /* just enough width so slides handing off screen are partially visible */
+  width: 73.8%;
+}
+
+@media (min-width: 37.5em) {
   .swiper-wrapper {
-    /* now pagination is below slides */
-    margin-bottom: 3em;
-
-    /* just enough width so slides handing off screen are partially visible */
-    width: 73.8%;
+    width: 100%;
   }
+}
 
-  @media (min-width: 37.5em) {
-    .swiper-wrapper {
-      width: 100%;
-    }
+/* doubleing up specificity to win over on transform */
+.swiper-slide.swiper-slide {
+  /* a single column layout */
+  width: 100%;
+}
+
+
+@media (min-width: 37.5em) {
+  .swiper-slide.swiper-slide {
+    /* going for a 2 column layout here */
+    width: 50%;
+
+    /* centeredSlides set to true */
+    /* reposition so first slide appears on left */
+    transform: translateX(-50%);
   }
+}
 
-    /* doubleing up specificity to win over on transform */
-    .swiper-slide.swiper-slide {
-      /* a single column layout */
-      width: 100%;
-    }
+@media (min-width: 43.75em) {
+  .swiper-slide.swiper-slide {
+    /* upping it to a 3 column layout */
+    width: 33.33333333333%;
 
+    /* centeredSlides set to true */
+    /* reposition so first slide appears on left */
+    transform: translateX(-100%);
+  }
+}
 
-    @media (min-width: 37.5em) {
-      .swiper-slide.swiper-slide  {
-        /* going for a 2 column layout here */
-        width: 50%;
+@media (min-width: 53em) {
+  .swiper-slide.swiper-slide {
+    /* and finally the 4 column layout */
+    width: 25%;
 
-        /* centeredSlides set to true */
-        /* reposition so first slide appears on left */
-        transform: translateX(-50%);
-      }
-    }
+    /* centeredSlides set to true */
+    /* reposition so first slide appears on left */
+    transform: translateX(-150%);
+  }
+}
 
-    @media (min-width: 43.75em) {
-      .swiper-slide.swiper-slide  {
-        /* upping it to a 3 column layout */
-        width: 33.33333333333%;
+.swiper-pagination {
+  /* show on small viewports */
+  display: block;
+}
 
-        /* centeredSlides set to true */
-        /* reposition so first slide appears on left */
-        transform: translateX(-100%);
-      }
-    }
+@media (min-width: 37.5em) {
+  .swiper-pagination {
+    /* hide on larger viewports per stakeholder recommendation */
+    display: none;
+  }
+}
 
-    @media (min-width: 53em) {
-      .swiper-slide.swiper-slide  {
-        /* and finally the 4 column layout */
-        width: 25%;
+/* now move prev button more to the left */
+.swiper-button-prev {
+  /* but first hide on small viewports */
+  display: none;
 
-        /* centeredSlides set to true */
-        /* reposition so first slide appears on left */
-        transform: translateX(-150%);
-      }
-    }
+  left: 0;
+  top: 0;
 
-    .swiper-pagination {
-      /* show on small viewports */
-      display: block;
-    }
+  margin-top: 0;
 
-    @media (min-width: 37.5em) {
-      .swiper-pagination {
-        /* hide on larger viewports per stakeholder recommendation */
-        display: none;
-      }
-    }
+  /* subtract .swiper-wrapper bottom-margin to vertically center arrow */
+  height: calc(100% - 3em);
+}
 
-    /* now move prev button more to the left */
-    .swiper-button-prev {
-      /* but first hide on small viewports */
-      display: none;
+@media (min-width: 37.5em) {
+  .swiper-button-prev {
+    /* show on larger viewports */
+    display: block;
+  }
+}
 
-      left: 0;
-      top: 0;
+.swiper-button-next {
+  /* hide on small viewports */
+  display: none;
 
-      margin-top: 0;
+  right: 0;
+  top: 0;
 
-      /* subtract .swiper-wrapper bottom-margin to vertically center arrow */
-      height: calc(100% - 3em);
-    }
+  margin-top: 0;
 
-    @media (min-width: 37.5em) {
-      .swiper-button-prev {
-        /* show on larger viewports */
-        display: block;
-      }
-    }
+  /* subtract .swiper-wrapper bottom-margin to vertically center arrow */
+  height: calc(100% - 3em);
+}
 
-    .swiper-button-next {
-      /* hide on small viewports */
-      display: none;
-
-      right: 0;
-      top: 0;
-
-      margin-top: 0;
-
-      /* subtract .swiper-wrapper bottom-margin to vertically center arrow */
-      height: calc(100% - 3em);
-    }
-
-    @media (min-width: 37.5em) {
-      .swiper-button-next {
-        /* show on larger viewports */
-        display: block;
-      }
-    }
+@media (min-width: 37.5em) {
+  .swiper-button-next {
+    /* show on larger viewports */
+    display: block;
+  }
+}
 
 /* ==========================================================================
    content in swiper
  ========================================================================== */
 
 .product {
-display: flex;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 82%;
 }
 
-  .photograph {
-    align-self: center;
-    display: block;
+.photograph {
+  align-self: center;
+  display: block;
 
-    height: auto;
-    width: 100%;
-  }
+  height: auto;
+  width: 100%;
+}
 
+.product__name.product__name {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: calc(.5em + 5vw);
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: 37.5em) {
   .product__name.product__name {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    font-size: calc(.5em + 5vw);
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
+    font-size: .92em;
   }
+}
 
-  @media (min-width: 37.5em) {
-    .product__name.product__name {
-      font-size: .92em;
-    }
-  }
+.product__description {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: calc(.3em + 5vw);
+  font-weight: 300;
+  line-height: 1.1;
+  text-align: center;
+}
 
+@media (min-width: 37.5em) {
   .product__description {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    font-size: calc(.3em + 5vw);
-    font-weight: 300;
-    line-height: 1.1;
-    text-align: center;
+    font-size: .92em;
   }
+}
 
-  @media (min-width: 37.5em) {
-    .product__description {
-      font-size: .92em;
-    }
-  }
-  .hero-Section{
-    background-image: url(../assets/images/hero.jpg);
-    padding: 50px 0;
-    background-color: #848484;
-    background-blend-mode: multiply;
-  }
-  .hero-Section h4{
-    color: white;
-    margin-bottom: 15px;
-  }
-  .slider{
-    display: flex;
-    gap: 10px;
-    overflow-x: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: #323232 rgb(174, 174, 174);
-  }
-#dropdown-basic{
+.hero-Section {
+  background-image: url(../assets/images/hero.jpg);
+  padding: 50px 0;
+  background-color: #848484;
+  background-blend-mode: multiply;
+}
+
+.hero-Section h4 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.slider {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #323232 rgb(174, 174, 174);
+}
+
+#dropdown-basic {
   background-color: transparent;
   border: none;
+}
+
+.profile-setting .card {
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 30px;
+}
+
+.profile-setting .card-header {
+  background-color: #fff;
+  border: none;
+
+  & img {
+    background-color: #f9f9f9;
+    border: 1px solid #c7c7c7;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+}
+
+.profile-setting .card-body h6 {
+  font-size: 18px;
+  color: #F20607;
+}
+
+.profile-setting .card-body label {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.profile-setting .card-body p {
+  font-size: 15px;
+}
+
+.downloads .card {
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.downloads .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.downloads .download-btn {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.downloads .download-btn:hover {
+  background-color: #ff3737;
 }
