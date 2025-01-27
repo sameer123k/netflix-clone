@@ -17,7 +17,7 @@ export default function dashboardheader() {
             <div className="topLeft">
               <Link to="/Dashboard"> <img src={Logo} alt="logo" height={30} /></Link>
               <ul>
-                <li> <Link to="/Dashboard"> Home </Link>  </li>
+                <li className='active'> <Link to="/Dashboard"> Home </Link>  </li>
                 <li> <Link to="">Series</Link> </li>
                 <li> <Link to="">Movies</Link> </li>
                 <li> <Link to="">New and Popular</Link> </li>
@@ -41,8 +41,7 @@ export default function dashboardheader() {
                 <Dropdown.Menu>
                   <Dropdown.Item href="/Profile"><i class="bi bi-person-circle pe-1"></i> Profile Setting</Dropdown.Item>
                   <Dropdown.Item href="/Downloads"><i class="bi bi-download pe-1"></i> Downloads</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3"><i class="bi bi-currency-rupee pe-1"></i> My Plans </Dropdown.Item>
-                  <Dropdown.Item href="#/action-4"><i class="bi bi-headset pe-1"></i> Help Center </Dropdown.Item>
+                  <Dropdown.Item href="/HelpCenter"><i class="bi bi-headset pe-1"></i> Help Center </Dropdown.Item>
                   <Dropdown.Item href="/"><i class="bi bi-box-arrow-left"></i> Logout </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>

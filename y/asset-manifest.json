@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/netflix-clone/static/css/main.18cd4df8.css",
-    "main.js": "/netflix-clone/static/js/main.9bd15b05.js",
-    "static/js/453.69f21b98.chunk.js": "/netflix-clone/static/js/453.69f21b98.chunk.js",
-    "static/media/hero.jpg": "/netflix-clone/static/media/hero.b7fe26a8d1a8fb8341c3.jpg",
-    "static/media/logo1.png": "/netflix-clone/static/media/logo1.f9baf73d1ccd6535a8e1.png",
-    "static/media/404.png": "/netflix-clone/static/media/404.c0bc7d0b97fa8387bee7.png",
-    "static/media/profile.png": "/netflix-clone/static/media/profile.63be3576b02d65647851.png",
-    "static/media/bg.avif": "/netflix-clone/static/media/bg.a631161ca7184b35157a.avif",
-    "static/media/movie1.jpg": "/netflix-clone/static/media/movie1.cc401f5bd8e766e17984.jpg",
-    "static/media/movie2.jpg": "/netflix-clone/static/media/movie2.910dc2031cada5478ce1.jpg",
-    "static/media/frame.png": "/netflix-clone/static/media/frame.0049bc70babc1f94cf88.png",
-    "index.html": "/netflix-clone/index.html",
-    "main.18cd4df8.css.map": "/netflix-clone/static/css/main.18cd4df8.css.map",
-    "main.9bd15b05.js.map": "/netflix-clone/static/js/main.9bd15b05.js.map",
-    "453.69f21b98.chunk.js.map": "/netflix-clone/static/js/453.69f21b98.chunk.js.map"
+    "main.css": "/static/css/main.9bed3d21.css",
+    "main.js": "/static/js/main.5464f7bf.js",
+    "static/js/453.69f21b98.chunk.js": "/static/js/453.69f21b98.chunk.js",
+    "static/media/hero.jpg": "/static/media/hero.b7fe26a8d1a8fb8341c3.jpg",
+    "static/media/logo1.png": "/static/media/logo1.f9baf73d1ccd6535a8e1.png",
+    "static/media/404.png": "/static/media/404.c0bc7d0b97fa8387bee7.png",
+    "static/media/profile.png": "/static/media/profile.63be3576b02d65647851.png",
+    "static/media/bg.avif": "/static/media/bg.a631161ca7184b35157a.avif",
+    "static/media/movie1.jpg": "/static/media/movie1.cc401f5bd8e766e17984.jpg",
+    "static/media/movie2.jpg": "/static/media/movie2.910dc2031cada5478ce1.jpg",
+    "static/media/frame.png": "/static/media/frame.0049bc70babc1f94cf88.png",
+    "index.html": "/index.html",
+    "main.9bed3d21.css.map": "/static/css/main.9bed3d21.css.map",
+    "main.5464f7bf.js.map": "/static/js/main.5464f7bf.js.map",
+    "453.69f21b98.chunk.js.map": "/static/js/453.69f21b98.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18cd4df8.css",
-    "static/js/main.9bd15b05.js"
+    "static/css/main.9bed3d21.css",
+    "static/js/main.5464f7bf.js"
   ]
 }

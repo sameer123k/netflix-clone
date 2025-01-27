@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Dashboardheader from './Components/dashboardheader';
 import Profile from './pages/profile-setting';
 import Downloads from './pages/downloads';
+import HelpCenter from './pages/helpcenter';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="*" element={<Notfound />} />
         <Route path="Profile" element={<Profile />} />
         <Route path="Downloads" element={<Downloads />} />
+        <Route path="HelpCenter" element={<HelpCenter />} />
 
       </Routes>
     </BrowserRouter>
