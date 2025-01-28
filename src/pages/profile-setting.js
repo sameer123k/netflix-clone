@@ -22,7 +22,7 @@ export default function profilesetting() {
                                 <img src={avatarImg} alt='avatar image' />
                             </div>
                             <div className='card-body text-center'>
-                                <h6> Sameer Khan </h6>
+                                <h6> Mr. Sameer  </h6>
                                 <Row className='align-items-center pt-2'>
                                     <Col>
                                         <label>Email  </label>

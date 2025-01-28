@@ -43,7 +43,7 @@ export default function footer() {
         </Row>
 
         <Row>
-          <p className="footerCopy"> Designed by <Link to="https://infracode.in/">InfraCode</Link> </p>
+          <p className="footerCopy"> Designed by <Link to=".">Mr. Sameer </Link> </p>
         </Row>
       </Container>
     </div>

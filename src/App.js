@@ -11,6 +11,7 @@ import Dashboardheader from './Components/dashboardheader';
 import Profile from './pages/profile-setting';
 import Downloads from './pages/downloads';
 import HelpCenter from './pages/helpcenter';
+import DashboardDetails from './pages/dashboardDetails';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="Profile" element={<Profile />} />
         <Route path="Downloads" element={<Downloads />} />
         <Route path="HelpCenter" element={<HelpCenter />} />
+        <Route path="DashboardDetails" element={ <DashboardDetails />} />
 
       </Routes>
     </BrowserRouter>

@@ -12,6 +12,8 @@ import Movie3 from '../assets/images/movie3.jpg';
 import Movie4 from '../assets/images/movie4.jpg';
 import Movie5 from '../assets/images/movie5.jpg';
 import Footer from '../Components/footer';
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 export default function dashboard() {
     return (
@@ -29,7 +31,7 @@ export default function dashboard() {
                                     <div class="banner-content">
                                         <h1>Popular on Netflix</h1>
                                         <p>Watch the latest movies and TV shows.</p>
-                                        <button>Watch Now</button>
+                                       <Button><Link to="/DashboardDetails">Watch Now  </Link></Button>
                                     </div>
                                 </section>
                             </main>

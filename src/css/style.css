@@ -165,6 +165,7 @@
 
 .footer ul li a {
   color: #a3a3a3;
+  text-decoration: none;
 }
 
 .footer ul li a:hover {
@@ -424,9 +425,11 @@
   font-size: 15px;
   font-weight: 600;
 }
-.topLeft ul li.active a{
+
+.topLeft ul li.active a {
   color: var(--primary);
 }
+
 .topLeft ul li a {
   color: #fff;
   text-decoration: none;
@@ -727,7 +730,8 @@
   color: var(--primary);
   font-size: 21px;
 }
-/* From Uiverse.io by zanina-yassine */ 
+
+/* From Uiverse.io by zanina-yassine */
 .popup {
   position: relative;
   width: 320px;
@@ -785,8 +789,7 @@
   border-radius: 5px;
   outline: none;
   border: 1px solid #e5e5e5;
-  filter: drop-shadow(0px 1px 0px #efefef)
-    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
   transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
 
@@ -815,7 +818,7 @@
   line-height: 15px;
   color: #ffffff;
 }
-    
+
 
 .banner {
   background-image: url('https://via.placeholder.com/1200x400');
@@ -864,7 +867,45 @@
   transition: background-color 0.3s;
 }
 
+.banner button a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .banner button:hover {
   background-color: #f5f5f5;
   color: #e509
+}
+
+.banner button:hover a {
+  color: #000;
+}
+
+.dashboard_Details .sidebarVideos {
+  display: flex;
+  gap: 10px;
+  padding: 0 0 20px 0;
+}
+
+.dashboard_Details .sidebarVideos img {
+  height: 80px;
+}
+
+.dashboard_Details .sidebarVideos h5 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.dashboard_Details .sidebarVideos p {
+  font-size: 15px;
+}
+
+.dashboard_Details blockquote {
+  background-color: #f2f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.dashboard_Details blockquote ul li {
+  font-size: 15px;
 }
