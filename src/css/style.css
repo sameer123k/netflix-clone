@@ -731,7 +731,6 @@
   font-size: 21px;
 }
 
-/* From Uiverse.io by zanina-yassine */
 .popup {
   position: relative;
   width: 320px;
@@ -908,4 +907,46 @@
 
 .dashboard_Details blockquote ul li {
   font-size: 15px;
+}
+
+.media-set-wrapper {
+  position: relative;
+  margin-top: 50px;
+}
+
+.media-set-container {
+  display: grid;
+  grid-template-columns: repeat(100%);
+  gap: 0.8rem;
+  /* overflow-x: scroll; */
+  /* scroll-behavior: smooth; */
+  /* scroll-snap-type: x mandatory; */
+  scrollbar-width: thin;
+}
+
+.media-set {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  /* scroll-snap-align: start; */
+}
+
+&:hover>a {
+  opacity: 1;
+}
+
+&:target>a {
+  pointer-events: auto;
+}
+
+
+.media-item {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 0.2rem;
+
+  >img {
+    width: 100%;
+    object-fit: scale-down;
+  }
 }

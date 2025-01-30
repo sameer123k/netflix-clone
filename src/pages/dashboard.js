@@ -4,16 +4,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Header from '../Components/dashboardheader';
 import '../css/style.css';
-import Logo from '../assets/images/logo1.png';
-import SliderImg from '../assets/images/hero.jpg';
-import Movie from '../assets/images/movie1.jpg';
-import Movie2 from '../assets/images/movie2.jpg';
-import Movie3 from '../assets/images/movie3.jpg';
-import Movie4 from '../assets/images/movie4.jpg';
-import Movie5 from '../assets/images/movie5.jpg';
 import Footer from '../Components/footer';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
+import Orange from '../assets/images/orange.jpg';
+import Blacklist from '../assets/images/blacklist.webp';
+import Hotdog from '../assets/images/hotdog.webp';
+import Peaky from '../assets/images/peaky.jpg';
+import BigBang from '../assets/images/bigbang.webp';
 
 export default function dashboard() {
     return (
@@ -31,114 +29,69 @@ export default function dashboard() {
                                     <div class="banner-content">
                                         <h1>Popular on Netflix</h1>
                                         <p>Watch the latest movies and TV shows.</p>
-                                       <Button><Link to="/DashboardDetails">Watch Now  </Link></Button>
+                                        <Button><Link to="/DashboardDetails">Watch Now  </Link></Button>
                                     </div>
                                 </section>
                             </main>
                         </Col>
                         <Col xl={12}>
-                            <Row>
-                                <Col xl={3}>  <section class="movie-list">
-                                    <h2>Trending Now</h2>
-                                    <div class="movies">
-                                        <div class="movie">
-                                            <img src={Movie} alt="Movie 1" />
-                                            <p>Movie Title 1</p>
+                            <div class="media-set-wrapper">
+                                <div class="media-set-container">
+
+                                    <div class="media-set">
+                                        <div class="media-item">
+                                            <img src={Orange} alt="movie image" />
                                         </div>
-                                        <div class="movie">
-                                            <img src={Movie2} alt="Movie 2" />
-                                            <p>Movie Title 2</p>
+                                        <div class="media-item">
+                                            <img src={Blacklist} />
                                         </div>
-                                        <div class="movie">
-                                            <img src={Movie3} alt="Movie 3" />
-                                            <p>Movie Title 3</p>
+                                        <div class="media-item">
+                                            <img src={Hotdog} />
                                         </div>
-                                        <div class="movie">
-                                            <img src={Movie4} alt="Movie 4" />
-                                            <p>Movie Title 4</p>
+                                        <div class="media-item">
+                                            <img src={Peaky} />
                                         </div>
-                                        <div class="movie">
-                                            <img src={Movie5} alt="Movie 5" />
-                                            <p>Movie Title 5</p>
+                                        <div class="media-item">
+                                            <img src={BigBang} />
                                         </div>
+                                        <div class="media-item">
+                                            <img src={Orange} alt="movie" />
+                                        </div>
+                                        <div class="media-item">
+                                            <img src={Blacklist} />
+                                        </div>
+                                        <div class="media-item">
+                                            <img src={Hotdog} />
+                                        </div>
+                                        <div class="media-item">
+                                            <img src={Peaky} />
+                                        </div>
+                                        <div class="media-item">
+                                            <img src={BigBang} />
+                                        </div>
+                                        <div class="media-item">
+                                            <img src={Hotdog} />
+                                        </div>
+                                        <div class="media-item">
+                                            <img src={Peaky} />
+                                        </div>
+                                        <div class="media-item">
+                                            <img src={BigBang} />
+                                        </div>
+                                        <div class="media-item">
+                                            <img src={Orange} alt="movie" />
+                                        </div>
+                                        <div class="media-item">
+                                            <img src={Blacklist} />
+                                        </div>
+                                        <div class="media-item">
+                                            <img src={Hotdog} />
+                                        </div>
+
                                     </div>
-                                </section></Col>
-                                <Col xl={3}>  <section class="movie-list">
-                                    <h2>Trending Now</h2>
-                                    <div class="movies">
-                                        <div class="movie">
-                                            <img src={Movie2} alt="Movie 1" />
-                                            <p>Movie Title 1</p>
-                                        </div>
-                                        <div class="movie">
-                                            <img src={Movie} alt="Movie 2" />
-                                            <p>Movie Title 2</p>
-                                        </div>
-                                        <div class="movie">
-                                            <img src={Movie3} alt="Movie 3" />
-                                            <p>Movie Title 3</p>
-                                        </div>
-                                        <div class="movie">
-                                            <img src={Movie4} alt="Movie 4" />
-                                            <p>Movie Title 4</p>
-                                        </div>
-                                        <div class="movie">
-                                            <img src={Movie5} alt="Movie 5" />
-                                            <p>Movie Title 5</p>
-                                        </div>
-                                    </div>
-                                </section></Col>
-                                <Col xl={3}>  <section class="movie-list">
-                                    <h2>Trending Now</h2>
-                                    <div class="movies">
-                                        <div class="movie">
-                                            <img src={Movie3} alt="Movie 1" />
-                                            <p>Movie Title 1</p>
-                                        </div>
-                                        <div class="movie">
-                                            <img src={Movie2} alt="Movie 2" />
-                                            <p>Movie Title 2</p>
-                                        </div>
-                                        <div class="movie">
-                                            <img src={Movie3} alt="Movie 3" />
-                                            <p>Movie Title 3</p>
-                                        </div>
-                                        <div class="movie">
-                                            <img src={Movie4} alt="Movie 4" />
-                                            <p>Movie Title 4</p>
-                                        </div>
-                                        <div class="movie">
-                                            <img src={Movie5} alt="Movie 5" />
-                                            <p>Movie Title 5</p>
-                                        </div>
-                                    </div>
-                                </section></Col>
-                                <Col xl={3}>  <section class="movie-list">
-                                    <h2>Trending Now</h2>
-                                    <div class="movies">
-                                        <div class="movie">
-                                            <img src={Movie5} alt="Movie 1" />
-                                            <p>Movie Title 1</p>
-                                        </div>
-                                        <div class="movie">
-                                            <img src={Movie2} alt="Movie 2" />
-                                            <p>Movie Title 2</p>
-                                        </div>
-                                        <div class="movie">
-                                            <img src={Movie3} alt="Movie 3" />
-                                            <p>Movie Title 3</p>
-                                        </div>
-                                        <div class="movie">
-                                            <img src={Movie4} alt="Movie 4" />
-                                            <p>Movie Title 4</p>
-                                        </div>
-                                        <div class="movie">
-                                            <img src={Movie5} alt="Movie 5" />
-                                            <p>Movie Title 5</p>
-                                        </div>
-                                    </div>
-                                </section></Col>
-                            </Row>
+
+                                </div>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
