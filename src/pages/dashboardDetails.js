@@ -16,7 +16,7 @@ export default function dashboardDetails() {
             <Container fluid className='py-3'>
                 <Row>
                     <Col xl={8} lg={8} md={8} sm={6} xs={12}>
-                        <video height="370" width="100%" controls >
+                        <video height="370" width="100%" controlsList='nodownload' controls >
                             <source src={PathaanVideo} type="video/mp4" />
                         </video>
                         <h5> Pathaan Trailer | Shah Rukh Khan | Deepika Padukone | John Abraham | Siddharth A | YRF Spy Universe </h5>
