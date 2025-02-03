@@ -13,6 +13,7 @@ import Hotdog from '../assets/images/hotdog.webp';
 import Peaky from '../assets/images/peaky.jpg';
 import BigBang from '../assets/images/bigbang.webp';
 
+
 export default function dashboard() {
     return (
         // header 
@@ -29,7 +30,7 @@ export default function dashboard() {
                                     <div class="banner-content">
                                         <h1>Popular on Netflix</h1>
                                         <p>Watch the latest movies and TV shows.</p>
-                                        <Button><Link to="/DashboardDetails">Watch Now  </Link></Button>
+                                        <Button><Link to="../../DashboardDetails">Watch Now  </Link></Button>
                                     </div>
                                 </section>
                             </main>
@@ -40,52 +41,52 @@ export default function dashboard() {
 
                                     <div class="media-set">
                                         <div class="media-item">
-                                            <img src={Orange} alt="movie image" />
+                                            <Link to="../../dashboardDetails">  <img src={Orange} alt="movie image" /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={Blacklist} />
+                                            <Link to="../../dashboardDetails">   <img src={Blacklist} /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={Hotdog} />
+                                            <Link to="../../dashboardDetails">   <img src={Hotdog} /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={Peaky} />
+                                            <Link to="../../dashboardDetails">   <img src={Peaky} /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={BigBang} />
+                                            <Link to="../../dashboardDetails">   <img src={BigBang} /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={Orange} alt="movie" />
+                                            <Link to="../../dashboardDetails">   <img src={Orange} alt="movie" /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={Blacklist} />
+                                            <Link to="../../dashboardDetails">  <img src={Blacklist} /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={Hotdog} />
+                                            <Link to="../../dashboardDetails">  <img src={Hotdog} /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={Peaky} />
+                                            <Link to="../../dashboardDetails">   <img src={Peaky} />  </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={BigBang} />
+                                            <Link to="../../dashboardDetails">   <img src={BigBang} /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={Hotdog} />
+                                            <Link to="../../dashboardDetails">   <img src={Hotdog} /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={Peaky} />
+                                            <Link to="../../dashboardDetails">   <img src={Peaky} /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={BigBang} />
+                                            <Link to="../../dashboardDetails">  <img src={BigBang} /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={Orange} alt="movie" />
+                                            <Link to="../../dashboardDetails">  <img src={Orange} alt="movie" /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={Blacklist} />
+                                            <Link to="../../dashboardDetails">   <img src={Blacklist} /> </Link>
                                         </div>
                                         <div class="media-item">
-                                            <img src={Hotdog} />
+                                            <Link to="../../dashboardDetails">   <img src={Hotdog} /> </Link>
                                         </div>
 
                                     </div>

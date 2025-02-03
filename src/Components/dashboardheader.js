@@ -12,6 +12,11 @@ import Movie from '../assets/images/movie1.jpg';
 import Movie2 from '../assets/images/movie2.jpg';
 import Movie3 from '../assets/images/movie3.jpg';
 import Movie4 from '../assets/images/movie4.jpg';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 export default function dashboardheader() {
@@ -22,18 +27,30 @@ export default function dashboardheader() {
   const handleShow = () => setShow(true);
   return (
     <div className="bg-black">
-      <Container className='py-3'>
+      <Container className='py-3' >
         <Row className='align-items-center'>
           <Col xl="6" xs={12}>
-            <div className="topLeft">
-              <Link to="/Dashboard"> <img src={Logo} alt="logo" height={30} /></Link>
-              <ul>
-                <li className='active'> <Link to="/Dashboard"> Home </Link>  </li>
-                <li> <Link to="">Series</Link> </li>
-                <li> <Link to="">Movies</Link> </li>
-                <li> <Link to="">New and Popular</Link> </li>
-                <li> <Link to="">My List</Link> </li>
-              </ul>
+            <div className="topLeft" >
+              <Navbar expand="lg">
+                <Container fluid>
+                  <Link to="/dashboard" > <img src={Logo} alt="logo" height={30} /></Link>
+                  <Navbar.Toggle aria-controls="navbarScroll" className='bg-light' />
+                  <Navbar.Collapse id="navbarScroll">
+                    <Nav
+                      className="me-auto my-2 my-lg-0"
+                      style={{ maxHeight: '100px' }}
+                      navbarScroll
+                    >
+                      <Nav.Link href="" className='active'>Home</Nav.Link>
+                      <Nav.Link href="">Series</Nav.Link>
+                      <Nav.Link href="">Movies</Nav.Link>
+                      <Nav.Link href="">New and Popular</Nav.Link>
+                      <Nav.Link href="">My List</Nav.Link>
+
+                    </Nav>
+                  </Navbar.Collapse>
+                </Container>
+              </Navbar>
             </div>
           </Col>
           <Col xl="6" xs={12}>
@@ -52,7 +69,7 @@ export default function dashboardheader() {
                   <div className='sidebarVideos'>
                     <div>  <img src={Movie} alt="movie" className='img-fluid rounded' /></div>
                     <div>
-                      <h5> Pathaan Official Trailer | Shahrukh Khan </h5>
+                      <Link to="../../DashboardDetails" > <h5> Pathaan Official Trailer | Shahrukh Khan </h5></Link>
                       <div>
                         <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
                       </div>
@@ -62,7 +79,7 @@ export default function dashboardheader() {
                   <div className='sidebarVideos'>
                     <div>  <img src={Movie2} alt="movie" className='img-fluid rounded' /></div>
                     <div>
-                      <h5> Pathaan Official Trailer | Shahrukh Khan </h5>
+                      <Link to="../../DashboardDetails" > <h5> Pathaan Official Trailer | Shahrukh Khan </h5> </Link>
                       <div>
                         <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
                       </div>
@@ -72,7 +89,7 @@ export default function dashboardheader() {
                   <div className='sidebarVideos'>
                     <div>  <img src={Movie3} alt="movie" className='img-fluid rounded' /></div>
                     <div>
-                      <h5> Pathaan Official Trailer | Shahrukh Khan </h5>
+                      <Link to="../../DashboardDetails" >    <h5> Pathaan Official Trailer | Shahrukh Khan </h5> </Link>
                       <div>
                         <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
                       </div>
@@ -82,7 +99,7 @@ export default function dashboardheader() {
                   <div className='sidebarVideos'>
                     <div>  <img src={Movie4} alt="movie" className='img-fluid rounded' /></div>
                     <div>
-                      <h5> Pathaan Official Trailer | Shahrukh Khan </h5>
+                      <Link to="../../DashboardDetails" >   <h5> Pathaan Official Trailer | Shahrukh Khan </h5> </Link>
                       <div>
                         <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
                       </div>

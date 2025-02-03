@@ -1,4 +1,3 @@
-import logo from './assets/images/logo1.png';
 import './css/App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -27,7 +26,7 @@ function App() {
         <Route path="Profile" element={<Profile />} />
         <Route path="Downloads" element={<Downloads />} />
         <Route path="HelpCenter" element={<HelpCenter />} />
-        <Route path="DashboardDetails" element={ <DashboardDetails />} />
+        <Route path="DashboardDetails" element={<DashboardDetails />} />
 
       </Routes>
     </BrowserRouter>
