@@ -31,7 +31,7 @@ export default function footer() {
               <li><a href="#">Account</a></li>
               <li><a href="#">Ways to Watch</a></li>
               <li><a href="#">Corporate Information</a></li>
-              <li><a href="#">Only on Netflix</a></li>
+              <li><a href="#">Only on Flixable </a></li>
             </ul></Col>
           <Col xs={12} sm={6} md={3} lg={3} xl={3} >
 

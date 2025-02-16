@@ -71,7 +71,7 @@ export default function dashboardheader() {
                     <div>
                       <Link to="../../DashboardDetails" > <h5> Pathaan Official Trailer | Shahrukh Khan </h5></Link>
                       <div>
-                        <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
+                        <small>Flixable  India <i class="bi bi-check-circle-fill"></i></small>
                       </div>
                       <small> 37 Mins Ago </small>
                     </div>
@@ -81,7 +81,7 @@ export default function dashboardheader() {
                     <div>
                       <Link to="../../DashboardDetails" > <h5> Pathaan Official Trailer | Shahrukh Khan </h5> </Link>
                       <div>
-                        <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
+                        <small>Flixable  India <i class="bi bi-check-circle-fill"></i></small>
                       </div>
                       <small> 52 Mins Ago </small>
                     </div>
@@ -91,7 +91,7 @@ export default function dashboardheader() {
                     <div>
                       <Link to="../../DashboardDetails" >    <h5> Pathaan Official Trailer | Shahrukh Khan </h5> </Link>
                       <div>
-                        <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
+                        <small>Flixable  India <i class="bi bi-check-circle-fill"></i></small>
                       </div>
                       <small> 2 Hrs Ago </small>
                     </div>
@@ -101,7 +101,7 @@ export default function dashboardheader() {
                     <div>
                       <Link to="../../DashboardDetails" >   <h5> Pathaan Official Trailer | Shahrukh Khan </h5> </Link>
                       <div>
-                        <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
+                        <small>Flixable  India <i class="bi bi-check-circle-fill"></i></small>
                       </div>
                       <small> 9 Hrs Ago </small>
                     </div>

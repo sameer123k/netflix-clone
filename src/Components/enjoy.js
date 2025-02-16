@@ -19,8 +19,8 @@ export default function enjoy() {
                         <div>
                             <div className='tvFrame'>
                                 <img src={frame} alt="frame" />
-                                <iframe src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" autoplay>
-                                </iframe>
+                                {/* <iframe src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" autoplay>
+                                </iframe> */}
                             </div>
                         </div>
                     </Col>

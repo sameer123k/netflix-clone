@@ -38,7 +38,7 @@ export default function dashboardDetails() {
                             <div>
                                 <h5> Pathaan Official Trailer | Shahrukh Khan </h5>
                                 <div>
-                                    <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
+                                    <small>Flixable  India <i class="bi bi-check-circle-fill"></i></small>
                                 </div>
                                 <small>2.22k views |</small>  <small> 3 Months Ago </small>
                             </div>
@@ -48,7 +48,7 @@ export default function dashboardDetails() {
                             <div>
                                 <h5> Pathaan Official Trailer | Shahrukh Khan </h5>
                                 <div>
-                                    <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
+                                    <small>Flixable  India <i class="bi bi-check-circle-fill"></i></small>
                                 </div>
                                 <small>18.7k views |</small>  <small> 1 Months Ago </small>
                             </div>
@@ -58,7 +58,7 @@ export default function dashboardDetails() {
                             <div>
                                 <h5> Pathaan Official Trailer | Shahrukh Khan </h5>
                                 <div>
-                                    <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
+                                    <small>Flixable  India <i class="bi bi-check-circle-fill"></i></small>
                                 </div>
                                 <small>29.8k views |</small>  <small> 2 Months Ago </small>
                             </div>
@@ -68,7 +68,7 @@ export default function dashboardDetails() {
                             <div>
                                 <h5> Pathaan Official Trailer | Shahrukh Khan </h5>
                                 <div>
-                                    <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
+                                    <small>Flixable  India <i class="bi bi-check-circle-fill"></i></small>
                                 </div>
                                 <small>79.3k views |</small>  <small> 11 Months Ago </small>
                             </div>
@@ -78,7 +78,7 @@ export default function dashboardDetails() {
                             <div>
                                 <h5> Pathaan Official Trailer | Shahrukh Khan </h5>
                                 <div>
-                                    <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
+                                    <small>Flixable  India <i class="bi bi-check-circle-fill"></i></small>
                                 </div>
                                 <small>4.2k views |</small>  <small> 2 Years Ago </small>
                             </div>
@@ -88,7 +88,7 @@ export default function dashboardDetails() {
                             <div>
                                 <h5> Pathaan Official Trailer | Shahrukh Khan </h5>
                                 <div>
-                                    <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
+                                    <small>Flixable  India <i class="bi bi-check-circle-fill"></i></small>
                                 </div>
                                 <small>33.6k views |</small>  <small> 7 Months Ago </small>
                             </div>
@@ -98,7 +98,7 @@ export default function dashboardDetails() {
                             <div>
                                 <h5> Pathaan Official Trailer | Shahrukh Khan </h5>
                                 <div>
-                                    <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
+                                    <small>Flixable  India <i class="bi bi-check-circle-fill"></i></small>
                                 </div>
                                 <small>43k views |</small>  <small> 9 Months Ago </small>
                             </div>
@@ -108,7 +108,7 @@ export default function dashboardDetails() {
                             <div>
                                 <h5> Pathaan Official Trailer | Shahrukh Khan </h5>
                                 <div>
-                                    <small>Netflix India <i class="bi bi-check-circle-fill"></i></small>
+                                    <small>Flixable  India <i class="bi bi-check-circle-fill"></i></small>
                                 </div>
                                 <small>67.6k views |</small>  <small> 12 Months Ago </small>
                             </div>

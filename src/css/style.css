@@ -2,7 +2,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 :root {
-  --primary: #DA0809;
+  --primary: #0898da;
 }
 
 .Header {
@@ -40,7 +40,7 @@
 
 .Header .Navbar a {
   border: white;
-  background: red;
+  background: var(--primary);
   border-radius: 3px;
   color: #fff;
   font-size: 15px;
@@ -104,7 +104,7 @@
   height: 50px;
   padding: 0 20px;
   border: none;
-  background-color: #ec0309;
+  background-color: var(--primary);
   color: #fff;
   margin-left: 8px;
   font-size: 25px;
@@ -259,7 +259,7 @@
   height: 50px;
   padding: 0 20px;
   border: none;
-  background-color: #ec0309;
+  background-color: var(--primary);
   color: #fff;
   margin-left: 8px;
   font-size: 25px;
@@ -294,11 +294,12 @@
 }
 
 .loginForm Form button.signIn {
-  background-color: red;
+  background-color: var(--primary);
   color: #fff;
   width: 100%;
   text-decoration: none;
   padding: 7px 0;
+  border: none;
 }
 
 .loginForm Form button.signIn a {
@@ -339,7 +340,7 @@
 }
 
 .footerCopy a {
-  color: red;
+  color: var(--primary);
 }
 
 /* tab responsive  */
@@ -509,7 +510,7 @@
     /* going for a 2 column layout here */
     width: 50%;
 
-    /* centeredSlides set to true */
+    /* centevar(--primary)Slides set to true */
     /* reposition so first slide appears on left */
     transform: translateX(-50%);
   }
@@ -520,7 +521,7 @@
     /* upping it to a 3 column layout */
     width: 33.33333333333%;
 
-    /* centeredSlides set to true */
+    /* centevar(--primary)Slides set to true */
     /* reposition so first slide appears on left */
     transform: translateX(-100%);
   }
@@ -531,7 +532,7 @@
     /* and finally the 4 column layout */
     width: 25%;
 
-    /* centeredSlides set to true */
+    /* centevar(--primary)Slides set to true */
     /* reposition so first slide appears on left */
     transform: translateX(-150%);
   }
@@ -676,7 +677,7 @@
 
 .profile-setting .card-body h6 {
   font-size: 18px;
-  color: #F20607;
+  color: var(--primary);
 }
 
 .profile-setting .card-body label {
@@ -704,7 +705,7 @@
 }
 
 .downloads .download-btn {
-  background-color: #e50914;
+  background-color: var(--primary);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -748,7 +749,7 @@
   justify-content: center;
   width: 60px;
   height: 60px;
-  background: #fee6e6;
+  background: #eaf4f9;
   box-shadow: 0px 0.5px 0.5px #EFEFEF, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
   border-radius: 5px;
 }
@@ -852,7 +853,7 @@
 .banner button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #e50914;
+  background-color: var(--primary);
   border: none;
   border-radius: 5px;
   color: white;
@@ -954,4 +955,9 @@
   .media-set{
     grid-template-columns: repeat(2,1fr);
   }
+}
+
+button.btn-danger{
+  background-color: var(--primary);
+  border: none;
 }

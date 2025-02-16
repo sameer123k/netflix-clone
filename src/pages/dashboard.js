@@ -28,7 +28,7 @@ export default function dashboard() {
                             <main>
                                 <section class="banner">
                                     <div class="banner-content">
-                                        <h1>Popular on Netflix</h1>
+                                        <h1>Popular on Flixable </h1>
                                         <p>Watch the latest movies and TV shows.</p>
                                         <Button><Link to="../../DashboardDetails">Watch Now  </Link></Button>
                                     </div>

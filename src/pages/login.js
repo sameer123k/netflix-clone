@@ -44,7 +44,7 @@ export default function login() {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="">
-            <p> New to Netflix? <strong> <Link to="/register">Sign up now</Link> </strong>   </p>
+            <p> New to Flixable ? <strong> <Link to="/register">Sign up now</Link> </strong>   </p>
           </Form.Group>
 
         </Form>
