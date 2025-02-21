@@ -11,11 +11,7 @@ import Profile from './pages/profile-setting';
 import Downloads from './pages/downloads';
 import HelpCenter from './pages/helpcenter';
 import DashboardDetails from './pages/dashboardDetails';
-
-
-
 function App() {
-
   return (
     <BrowserRouter>
       <Routes>
@@ -29,7 +25,6 @@ function App() {
         <Route path="Downloads" element={<Downloads />} />
         <Route path="HelpCenter" element={<HelpCenter />} />
         <Route path="DashboardDetails" element={<DashboardDetails />} />
-
       </Routes>
     </BrowserRouter>
   );
