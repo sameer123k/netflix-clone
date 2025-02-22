@@ -17,7 +17,7 @@
 
 .Header .logo {
   height: 50px;
-  mix-blend-mode: darken;
+  /* mix-blend-mode: darken; */
 }
 
 .Header .Navbar {
@@ -362,7 +362,34 @@
 
 /* mobile responsive  */
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:767px) {
+
+  .Header .logo {
+    height: 30px;
+  }
+
+  .banner h1 {
+    font-size: 30px !important;
+  }
+  .Header{
+    background: rgba(0, 0, 0, 0.7);
+    top: -1px;
+  }
+
+  .navbar-collapse .navbar-nav {
+    max-height: fit-content !important;
+    z-index: 999;
+    position: fixed;
+    background: black;
+    width: 90%;
+    padding: 10px 15px !important;
+    margin: 10px 0;
+  }
+
+  .loader-section .spinner {
+    margin: 80% auto;
+  }
+
   .heroSection .heroContent>div input {
     max-width: 220px;
     font-size: 16px;
