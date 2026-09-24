@@ -12,7 +12,6 @@ import Enjoy from '../Components/enjoy';
 import Accordion from '../Components/accordion';
 import { IconName } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
-import Loader from '../Components/loader';
 
 
 // link import 
@@ -22,11 +21,6 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return (
     <Container fluid className="p-0">
-
-
-      <div>
-        <Loader />
-      </div>
 
       <div className='Header'>
         <Header />
