@@ -10,8 +10,11 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo1.png';
 import Header from '../Components/header2';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 export default function Register() {
+
+  const navigate = useNavigate();
 
   const [formData, setformdata] = useState({
     name: '',
@@ -30,9 +33,11 @@ export default function Register() {
     }));
   };
 
-  const signup = async () => {
-    const dataStoredIs = await axios.post('10.140.255.139:3000/api/addUser/', formData);
-    console.log(dataStoredIs);
+  const signup = async (e) => {
+    e.preventDefault();
+    const dataStoredIs = await axios.post('http://localhost:3000/api/addUser', formData);
+    alert(dataStoredIs.data.message);
+    navigate('/login');
   }
 
   return (
@@ -45,7 +50,11 @@ export default function Register() {
         <Form>
           <h2> Sign up </h2>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control type="text" placeholder="Full Name" id="name" name="name" onChange={storeValue} />
+            <Form.Control type="text" placeholder="First Name" id="first_name" name="first_name" onChange={storeValue} />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Control type="text" placeholder="Last Name" id="last_name" name="last_name" onChange={storeValue} />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -55,9 +64,6 @@ export default function Register() {
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Control type="password" placeholder="Password" id="password" name="password" onChange={storeValue} />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control type="password" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" onChange={storeValue} />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">

@@ -21,7 +21,7 @@ export default function Header() {
                             <option>English</option>
                             <option>Hindi</option>
                         </select>
-                        <Link to="/Login">Sign in</Link>
+                        <Link to="/Register">Sign Up</Link>
                     </div>
                 </Col>
             </Row>

@@ -4,21 +4,23 @@ const Cors = require('cors');
 const allroutes = require('./routes/apiroute');
 require('dotenv').config();
 
-const PORT = process.env.PORT
-
 const app = express();
 
-const DatabaseIs = require('./database');
-
-app.use('/api/', allroutes); 
+const PORT = process.env.PORT;
 
 app.use(bodyParser.json());
 app.use(Cors());
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`)
-});
+const DatabaseIs = require('./database');
 
-app.get('/api', (req, res) => {
-    res.json({ text: 'Message From Backend' });
+app.use('/api', allroutes);
+
+// app.get('/api', (req, res) => {
+//     res.json({
+//         text: 'Message From Backend'
+//     });
+// });
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });

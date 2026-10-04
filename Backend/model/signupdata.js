@@ -1,8 +1,11 @@
-const { default: mongoose } = require('mongoose');
-const moongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-const UserData01 = new mongoose.Schema({
-    name: {
+const signupdata = new mongoose.Schema({
+    first_name: {
+        type: String,
+        required: true
+    },
+    last_name: {
         type: String,
         required: true
     },
@@ -14,14 +17,10 @@ const UserData01 = new mongoose.Schema({
         type: String,
         required: true
     },
-    confirmpassword: {
-        type: String,
-        required: true
-    },
     dob: {
         type: String,
         required: true
     }
 })
 
-module.exports = mongoose.model('userData', UserData01);
+module.exports = mongoose.model('signupmodel', signupdata);
